@@ -1,4 +1,5 @@
-import java.util.Scanner;
+
+  import java.util.Scanner;
 
 public class SumSeries {
     public static int calculateSum(int N) {
@@ -19,3 +20,4 @@ public class SumSeries {
         System.out.println("Tổng S = " + result);
     }
 }
+
