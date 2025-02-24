@@ -1,8 +1,21 @@
-def calculate_sum(N):
-    S = sum(i * 11 for i in range(1, N + 1))
-    return S
+import java.util.Scanner;
 
-if __name__ == "__main__":
-    N = int(input("Nhập N: "))
-    result = calculate_sum(N)
-    print(f"Tổng S = {result}")
+public class SumSeries {
+    public static int calculateSum(int N) {
+        int S = 0;
+        for (int i = 1; i <= N; i++) {
+            S += i * 11;
+        }
+        return S;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Nhập N: ");
+        int N = scanner.nextInt();
+        scanner.close();
+        
+        int result = calculateSum(N);
+        System.out.println("Tổng S = " + result);
+    }
+}
